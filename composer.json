@@ -5,5 +5,8 @@
       "App\\": "app/classes",
       "Core\\": "core/classes"
     }
+  },
+  "require": {
+    "ext-json": "*"
   }
 }

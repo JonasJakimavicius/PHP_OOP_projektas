@@ -137,6 +137,7 @@ const forms = {
 
             Object.keys(data).forEach(data_id => {
                 if (form[data_id]) {
+                    console.log(data_id)
                     const input = form.querySelector('input[name="' + data_id + '"]');
                     if (input) {
                         input.value = data[data_id];
@@ -299,6 +300,7 @@ const table = {
         delete: {
             init: function () {
                 table.getElement().addEventListener('click', this.onClickListener);
+
             },
             getElements: function () {
                 return document.querySelectorAll('.delete-btn');

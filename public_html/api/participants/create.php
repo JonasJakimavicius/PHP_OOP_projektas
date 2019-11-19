@@ -34,6 +34,7 @@ function form_success($filtered_input, $form) {
     if ($id !== false) {
         $participant->setId($id);
         $response->setData($participant->getData());
+       var_dump('ciaok');
     } else {
         $response->addError('Insert to database failed!');
     }

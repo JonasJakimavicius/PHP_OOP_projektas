@@ -25,7 +25,7 @@ class View {
      * Renders array into temlate
      * @param string $temlate_path
      * @return string HTML
-     * @Throws Exeption
+     * @throws Exception
      */
     public function render($template_path) {
         //Check if template exists
